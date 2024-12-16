@@ -1,0 +1,30 @@
+<script>
+
+// Entradas
+var x = parseFloat(prompt("Digite a coordenada x do vetor:"));
+var y = parseFloat(prompt("Digite a coordenada y do vetor:"));
+var tipoCisalhamento = prompt("Escolha o tipo de cisalhamento (x ou y):");
+
+var vetorC; // vetorC armazena o vetor cisalhado
+
+// Aplicação do Cisalhamento
+if (tipoCisalhamento === "x") {
+    var fatorX = parseFloat(prompt("Digite o fator de cisalhamento em relação ao eixo x:"));
+    // Cisalhamento em x
+    var xC = x + fatorX * y;
+    vetorC = [xC, y]; // Atualização de x
+} else if (tipoCisalhamento === "y") {
+    var fatorY = parseFloat(prompt("Digite o fator de cisalhamento em relação ao eixo y:"));
+    // Cisalhamento em y
+    var yC = y + fatorY * x;
+    vetorC = [x, yC]; // Atualização de y
+} else {
+    console.log("Tipo de cisalhamento inválido. Escolha 'x' ou 'y'.");
+}
+
+// Saída dos resultados
+console.log("Vetor original:", [x, y]);
+console.log("Vetor cisalhado:", vetorC);
+
+
+</script>

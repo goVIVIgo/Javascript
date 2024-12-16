@@ -1,0 +1,336 @@
+<<meta charset = "UFT - 8">
+
+<script>
+
+// var prompt = function(t){return lines.shift()}
+// 1060	- Números Positivos
+
+/* for(v = 0; v<100; v++){
+    if(v%2 == 0){
+        console.log(v)
+    }
+} */
+
+// var prompt = function(t){return lines.shift()}
+// 	1064 - Positivos e Média
+
+/* var numposi = 0
+var soma = 0
+
+for(v=0;v<=6;v++){
+    var valor = parseInt(prompt(""))
+    if(valor > 0){
+        numposi++
+        soma += numposi
+    }
+}
+
+var media = soma/positivo
+console.log(numposi + " valores positivos")
+console.log(media.toFixed(2)) */
+
+// 	1387 - Og
+// var prompt = function(t){return lines.shift()}
+
+/* while(true){
+    var [L,R] = prompt("").split(" ").map(Number)
+    if(L == 0 && R == 0){
+        break
+    } else{
+        var soma = L + R
+        console.log(total)
+    }
+} */
+
+// 	1143 - Quadrado e ao Cubo
+// var prompt = function(t){return lines.shift()}
+
+/* var silly = parseInt(prompt(""))
+var textosilly = ""
+
+for(v=1; v<silly; v++){
+    textosilly = v + " " + v**2 + " " + v**3
+    console.log(textosilly)
+} */
+
+// 	1065 - Pares entre Cinco Números
+// var prompt = function(t){return lines.shift()}
+
+/* var pares = 0
+for(v=0;v<5;v++){
+    var valores = parseInt(prompt(""))
+    if(valores%2 == 0){
+        pares++
+    }
+}
+
+console.log(pares + " valores pares") */
+
+
+// 	1066 - Pares, Ímpares, Positivos e Negativos
+// var prompt = function(t){return lines.shift()}
+
+/* var pares = 0 
+var impares = 0 
+var positivos = 0 
+var negativos = 0 
+
+for(v=0;v<5;v++){
+    var valores = parseInt(prompt(""))
+    if(valores%2 === 0){
+        pares++
+    } else if(valores%2 !== 0){
+        impares++
+    }
+    if (valores > 0){
+        positivos++
+    } else if(valores < 0){
+        negativos++
+    }
+}
+
+console.log(pares + " valor(es) par(es)")
+console.log(impares + " valor(es) impar(es)")
+console.log(positivos + " valor(es) positivo(s)")
+console.log(negativos + " valor(es) negativo(s)") */
+
+// 	1072 - Intervalo 2
+// var prompt = function(t){return lines.shift()}
+
+/* var casos = parseInt(prompt(""))
+
+var IN = 0
+var OUT = 0
+
+for(v=0;v<casos;v++){
+    var valores = parseInt(prompt(""))
+    if(valores>=10 && valores<=20){
+        IN++
+    } else {
+        OUT++
+    }
+}
+
+console.log(IN + " in")
+console.log(OUT + " out") */
+
+// 	1080 - Maior e Posição
+// var prompt = function(t){return lines.shift()}
+
+/* var maior = 0
+var posicao = 0
+
+for(v=1; v<=100; v++){
+    var valores = parseInt(prompt(""))
+    if (valores>maior){
+        maior = valores
+        posicao = v
+    }
+}
+
+console.log(maior)
+console.log(posicao) */
+
+
+// 	1131 - Grenais
+// var prompt = function(t){return lines.shift()}
+
+/* var silly = 1
+var grenais = 0
+var inter = 0
+var gremio = 0 
+var empate = 0 
+
+while(silly == 1){
+    grenais++
+    var [A,B] = prompt("").split(" ")
+    A = parseInt(A)
+    B = parseInt(B)
+    if(A>B){
+        inter++
+    } else if(A<B){
+        gremio++
+    } else {
+        empate++
+    }
+console.log("Novo grenal (1-sim 2-nao)")
+silly = parseInt(prompt(""))
+while(silly!=1 && silly!=2){
+    console.log("Novo grenal (1-sim 2-nao)")
+    silly = parseInt(prompt(""))
+}
+}
+
+console.log(grenais + " grenais")
+console.log("Inter:" +inter)
+console.log("Gremio:" +gremio)
+console.log("Empates:" +empate)
+
+if(inter>gremio && inter>empate){
+    console.log("Inter venceu mais")
+} else if(gremio>inter && gremio>empate){
+    console.log("gremio venceu mais")
+} else{
+    console.log("não ouve vencedor")
+}*/
+
+
+// 	1555 - Funções
+// var prompt = function(t){return lines.shift()}
+
+/* var casos = parseInt(prompt(""))
+
+for(v=0; v<casos; v++){
+    var[x,y] = prompt("").split(" ").map(Number)
+    // (3x)² + y².
+    var R = ((3*x)**2) + y**2
+    // 2(x²) + (5y)².
+    var B = (2*(x**2)) + ((5*y)**2)
+    // -100x + y³.
+    var C = (-100 * x) + y**3
+    if(R>B && R>C){
+        console.log("Rafael ganhou")
+    } else if (B>R && B>C){
+        console.log("Beto ganhou")
+    } else{
+        console.log("Carlos ganhou")
+    }
+}*/
+
+// 	1165 - Número Primo
+// var prompt = function(t){return lines.shift()}
+
+/* var casos = parseInt(prompt(""))
+
+for(v=0;v<casos;v++){
+    var x = parseInt(prompt(""))
+    var cont = 0 
+    for(m=1; m<x; m++){
+        if(x%m===0){
+            cont+=m
+        }
+    }
+    if(x==cont){
+        console.log(x + " eh primo")
+    } else{
+        console.log(x + " nao eh primo")
+    }
+
+} */
+
+// 	1397 - Jogo do Maior
+// var prompt = function(t){return lines.shift()}
+
+/*while(true){
+    var casos = parseInt(prompt(""))
+    if(casos===0){
+        break
+    } else{
+        var CONT1 = 0
+        var CONT2 = 0
+        for(v=0; v<casos; v++){
+            var[A,B] = prompt("").split(" ").map(Number)
+            if(A>B){
+                CONT1++
+            } else if (A<B){
+                CONT2++
+            } else{
+                continue
+            }
+
+        }
+    }
+    console.log(CONT1 +" "+ CONT2)
+}*/
+
+// 	2373 - Garçom
+// var prompt = function(t){return lines.shift()}
+
+/*var bandeja = parseInt(prompt(""))
+var quebrado = 0
+
+for(v=0;v<bandeja;v++){
+    var[L,C] = prompt("").split(" ").map(Number)
+    if(L>C){
+        quebrado+=C
+    }
+}
+
+console.log(quebrado)*/
+
+
+// 	1164 - Número Perfeito
+// var prompt = function(t){return lines.shift()}
+
+/*var casos = parseInt(prompt(""))
+
+for(v=0;v<casos;v++){
+    var n = parseInt(prompt(""))
+    var somadiv = 0
+    for(m=1;m<n;m++){
+        if(n%m==0){
+            somadiv+=m
+        }
+    }
+    if(n==m){
+        console.log(n +" eh perfeito")
+    } else{
+        console.log(n +" nao eh perfeito")
+    }
+} */
+
+// 	1397 - Jogo do Maior
+// var prompt = function(t){return lines.shift()}
+
+/* while(true){
+    var casos = parseInt(prompt(""))
+    if(casos == 0){
+        break
+    } else{
+        var T1 = 0
+        var T2 = 0
+        for(v=0;v<casos;v++){
+            var[A,B] = prompt("").split(" ").map(Number)
+            if(A>B){
+                T1++
+            }else if(A<B){
+                T2++
+            } else{
+                continue
+            }
+        }
+    }
+    console.log(T1 +" "+ T2)
+} */
+
+
+// 	1589 - Bob Conduite
+// var prompt = function(t){return lines.shift()}
+
+/* var casos = parseInt(prompt(""))
+
+for(v=0;v<casos;v++){
+    var [R1,R2] = prompt("").split(" ").map(Number)
+    menorTotal = R1+R2
+    console.log(menorTotal)
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>

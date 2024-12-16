@@ -1,0 +1,167 @@
+<meta charset = "UFT-8">
+
+//ANA VIRGINIA BRAGA FEITOSA 
+//PEDRO HENRIQUE BARBOZA DE OLIVEIRA 
+
+
+<script>
+
+//(ITEM A)
+
+    var x = parseInt(prompt("inserir numero de alunos a serem avaliados"))
+    var aveum = []
+    var avedois = []
+    var cont = 0
+    while(cont<x){
+        aveum[cont] = parseFloat(prompt("inserir nota do aluno "+(cont+1)+" da av1"))
+        cont++
+    }
+
+//(ITEM B)
+    
+    for(let i=0; i<aveum.length; i++){
+        if(i===0){
+            var maior = aveum[i]
+            var menor = aveum[i]
+        }else{
+            if(aveum[i]>=maior){
+                maior = aveum[i]
+            }
+            if(aveum[i]<=menor){
+                menor = aveum[i]
+            }
+    
+        }
+    }
+    document.write("a maior nota de Av1 da turma foi "+maior+"<br>")
+    document.write("a menor nota de Av1 da turma foi "+menor+"<br>")
+    
+//(ITEM A)
+
+    cont = 0
+    while(cont<x){
+        avedois[cont] = parseFloat(prompt("inserir nota do aluno "+(cont+1)+" da av2"))
+        cont++
+    }
+    
+    for(let i=0; i<avedois.length; i++){
+        if(i===0){
+            var maior2 = avedois[i]
+            var menor2 = avedois[i]
+        }else{
+            if(avedois[i]>=maior){
+                maior2 = avedois[i]
+            }
+            if(avedois[i]<=menor){
+                menor2 = avedois[i]
+            }
+    
+        }
+    }
+    
+//(ITEM B)
+
+    document.write("a maior nota de Av2 da turma foi "+maior2+"<br>")
+    document.write("a menor nota de Av2 da turma foi "+menor2+"<br>")
+    
+//(ITEM C)
+
+    var media = []
+    cont = 0
+    while(media.length<aveum.length){
+    media[cont] = (aveum[cont]+avedois[cont])/2
+    cont++
+    }
+    
+    var posicao;
+    
+    for(let i = 0; i<media.length-1; i++){
+        var pqeno = media[i]
+        posicao = [i]
+    
+        for(let j=i+1; j<media.length; j++){
+            if(media[j]<pqeno){
+                pqeno = media[j]
+                posicao = j
+            }
+    
+            media[posicao] = media[i]
+            media[i] = pqeno
+    
+        }
+    }
+    document.write("as medias da turma, em ordem, sao: "+media+"<br>")
+
+//(ITEM D)
+    
+    for(let i=0; i<media.length; i++){
+        if(i===0){
+            var maiorr = media[i]
+            var menorr = media[i]
+        }else{
+            if(media[i]>=maior){
+                maiorr = media[i]
+            }
+            if(media[i]<=menor){
+                menorr = media[i]
+            }
+    
+        }
+    }
+    
+    document.write("as menores e maiores medias da turma são, respectivamente: "+menorr+","+maiorr+"<br>")
+
+//(ITEM E)
+    
+    var recp = []
+    var mediar = []
+    cont = 0
+
+while(mediar.length<media.length){
+mediar[cont] = media[cont]
+cont++
+}
+var contar = 0
+    while(contar<mediar.length){
+        if(mediar[contar]<5){
+            recp[recp.length] = mediar[contar]
+            contar++
+        }else{
+            contar++
+        }
+    }
+    
+    document.write("o numero de alunos aprovados é "+(media.length-recp.length)+"<br>")
+
+    if(recp.length>0){
+    document.write("o numero de alunos em recuperação é "+(recp.length)+"<br>")
+    document.write("medias baixas:"+recp+"<br>")
+    
+    var notas = []
+    cont = 0
+    
+//(ITEM F)
+
+    while(notas.length<recp.length){
+        notas[cont] = parseFloat(prompt("inserir nota de recuperacao do aluno "+(cont+1)))
+    cont++
+    }
+    var final = []
+    cont = 0
+    while(final.length<recp.length){
+    final[cont] = (notas[cont]+recp[cont])/2
+    cont++
+    }
+    cont = 0
+    contar = 0
+while(contar<final.length){
+if(final[contar]<5){
+    contar++
+}else{
+    contar++
+    cont++
+}
+}
+document.write("o numero de alunos aprovados na avaliação final foi "+cont+"<br>")
+    }
+    </script>

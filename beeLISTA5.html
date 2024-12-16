@@ -1,0 +1,570 @@
+<script>
+
+/* 1172 - Substituição em Vetor I */
+
+// var prompt = function(t){return lines.shift()}
+
+/* var vetor = new Array(10)
+
+for(v=0;v<vetor.length;v++){
+    vetor[v] = parseInt(prompt(""))
+    if(vetor[v]<=0){
+        vetor[v] = 1
+        console.log("X["+v+"] = " +vetor[v])
+    } else{
+        console.log("X["+v+"] = " +vetor[v])
+    }
+} */
+
+
+
+/* 1174 - Seleçao em Vetor I */
+
+// var prompt = function(t){return lines.shift()}
+
+/*var vetor = []
+for(v=0;v<100;v++){
+    var A = parseFloat(prompt(""))
+    vetor[v] = A
+
+    if(vetor[v]<=10){
+        console.log("A["+v+"] = "+vetor[v].toFixed(1))
+    }
+}*/
+
+/* 1173 - Preenchimento de Vetor I */
+
+// var prompt = function(t){return lines.shift()}
+
+/* var vetor = new Array(10)
+var valor = parseInt(prompt(""))
+vetor[0] = valor
+
+for(v=1;v<10;v++){
+    vetor[v] = vetor[v-1] * 2
+}
+
+for(v=0;v<10;v++){
+    console.log("N["+v+"] = " +vetor[v])
+} */
+
+/* 1176 - Fibonacci em Vetor */
+
+ // var prompt = function(t){return lines.shift()}
+
+/* var casos = parseInt(prompt(""))
+
+var anterior = 0
+var atual = 1
+var proximo;
+var numero = []
+
+for(v=0;v<60;v++){
+    proximo = atual+anterior
+    atual = proximo
+    anterior = atual
+    numero[v] = proximo
+}
+
+for(v=0;v<casos;v++){
+    var N = parseInt(prompt(""))
+    console.log()
+} */
+
+
+/* 1177 - Preenchimento de Vetor II */
+
+ // var prompt = function(t){return lines.shift()}
+
+/* var numero = parseInt(prompt(""))
+
+var vetor = []
+var contador = 0
+
+for(v=0;v<1000;v++){
+    if(contador==numero){
+        contador=0
+    }
+    vetor[v] = contador
+    contador++
+    console.log("N["+v+"] = "+vetor[v])
+} */
+
+/* 1172 - Substituição em Vetor I */
+
+ // var prompt = function(t){return lines.shift()}
+
+
+/*var vetor = []
+
+for(v=0;v<10;v++){
+    vetor[v] = parseInt(prompt(""))
+    if(vetor[v] <= 0 ){
+        vetor[v] = 1
+    }
+    console.log("X["+v+"] = "+vetor[v])
+}*/
+
+/* 1174 - Seleçao em Vetor I */
+
+ // var prompt = function(t){return lines.shift()}
+
+/*var vetor = []
+
+for(v=0;v<100;v++){
+    vetor[v] = parseFloat(prompt(""))
+    if(vetor[v] <= 10){
+        console.log("A["+v+"] = "+vetor[v].toFixed(1))
+    }
+}*/
+
+
+/* 1177 - Preenchimento de Vetor II */
+
+ // var prompt = function(t){return lines.shift()}
+
+/*var valor = parseInt(prompt(""))
+
+var vetor = []
+var contador = 0
+
+for(v=0;v<1000;v++){
+    if(valor == contador){
+        contador = 0
+    }
+    vetor[v] = contador
+    contador++
+    console.log("N["+v+"] = "+vetor[v])
+} */
+
+/* 1180 - Menor e Posição */
+
+ // var prompt = function(t){return lines.shift()}
+
+/* var valor = parseInt(prompt(""))
+
+var menor;
+var posi;
+
+var vetor = prompt("").split(" ").map(Number)
+
+menor = vetor[0]
+posi = 0
+
+for(v=0;v<valor;v++){
+    if(vetor[v]<menor){
+        menor = vetor[v]
+        posi = v
+    }
+}
+
+console.log("Menor valor: "+menor)
+console.log("Posicao: "+posi) */
+
+
+/* 1180 - Menor e Posição */
+
+ // var prompt = function(t){return lines.shift()}
+
+/*var numero = parseInt(prompt("VOU ME MATASDRdt7fWDYFwdgyi"))
+
+var [ST,AT,BT] = [0,0,0]
+var [S1TS,A1TS,B1TS] = [0,0,0]
+
+for(v=0;v<numero;v++){
+    var nome = prompt("nome dessa merda")
+    var [S,A,B] =  prompt("numero inernid1").split(" ").map(Number)
+    var [S1,A1,B1] = prompt("cuuuuuuuu2").split(" ").map(Number)
+    var [ST,AT,BT] = [ST+S,AT+A,BT+B]
+    var [S1TS,A1TS,B1TS] = [S1TS+S1,A1TS+A1,B1TS+B1]
+    var PS = 100*S1TS/ST
+    var PA = 100*A1TS/AT
+    var PB = 100*B1TS/BT
+}
+
+console.log("Pontos de Saque: "+PS.toFixed(2)+" %.")
+console.log("Pontos de Bloqueio: "+PA.toFixed(2)+" %.")
+console.log("Pontos de Ataque: "+PB.toFixed(2)+" %.") */
+
+/* 2310- Voleibol */
+
+ // var prompt = function(t){return lines.shift()}
+
+/*var numero = parseInt(prompt("numero dos icbufob"))
+
+var [ST1,AT1,BT1] = [0,0,0]
+var [ST2,AT2,BT2] = [0,0,0]
+
+for(v=0;v<numero;v++){
+    var nome = prompt("nome dessa merda")
+    var [S1,A1,B1] = prompt("tentativa").split(" ").map(Number)
+    var [S2,A2,B2] = prompt("sucesso").split(" ").map(Number)
+
+    [ST1,AT1,BT1] = [ST1+S1,AT1+A1,BT1+B1]
+    [ST2,AT2,BT2] = [ST2+S2,AT2+A2,BT2+B2]
+
+    var PorS = 100*ST2/ST1
+    var PorA = 100*AT2/AT1
+    var PorB = 100*BT2/BT1
+}
+
+console.log("Pontos de Saque: "+PorS)
+console.log("Pontos de Bloqueio: "+PorA)
+console.log("Pontos de Ataque: "+PorB) */
+
+/* questão de sala */
+
+/* var nome = []
+var salario = []
+var tempo = []
+
+var aumento = []
+var nome_aumento = []
+m = 0
+
+for(v=0;v<5;v++){
+    nome[v] = prompt("nomes")
+    salario[v] = parseFloat(prompt("salario"))
+    tempo[v] = parseFloat(prompt("tempo"))
+
+    if(salario[v] < 800 && tempo[v] > 5){
+        nome_aumento[m] = nome[v]
+        aumento[m] = (salario[v]*1.35).toFixed(2)
+        m++
+    }
+}
+
+console.log(nome_aumento)
+console.log(aumento) */
+
+/* 1176 - Fibonacci em Vetor */
+
+ // var prompt = function(t){return lines.shift()}
+
+
+/* var casos = parseInt(prompt(""))
+
+var anterior = -1
+var atual = 1
+var proximo;
+
+var numero = []
+
+for(v=0;v<=60;v++){
+    proximo = atual + anterior
+    anterior = atual
+    atual = proximo
+    numero [v] = proximo
+}
+
+for(v=0;v<casos;v++){
+    var posi = parseInt(prompt(""))
+    console.log("Fib("+posi+") = "+numero[posi])
+} */
+
+/* 1179 - Preenchimento de Vetor IV */
+
+ // var prompt = function(t){return lines.shift()}
+
+
+/*var quin = 15
+var sequ = []
+var parr = []
+var imparr = []
+while(quin>0){
+    sequ[sequ.length] = parseInt(prompt())
+    quin--
+}
+
+
+while(sequ.length>0){
+
+if((sequ[0]%2)===0){
+parr.push(sequ.shift())
+}else{
+    imparr.push(sequ.shift())
+}
+var cinc = 0
+if(parr.length==5){
+while(cinc<5){
+    console.log("par ["+cinc+"] = "+parr.shift())
+    cinc++
+}
+}else if(imparr.length==5){
+    while(cinc<5){
+    console.log("impar ["+cinc+"] = "+imparr.shift())
+    cinc++
+}
+}
+}
+
+cinc = 0
+while(imparr.length>0){
+    console.log("impar ["+cinc+"] = "+imparr.shift())
+    cinc++
+}
+
+cinc = 0
+while(parr.length>0){
+    console.log("par ["+cinc+"] = "+parr.shift())
+    cinc++
+}*/
+
+
+
+/*
+document.write(sequ+"<br>")
+    document.write(parr+"<br>")
+*/
+
+/* 1172 - Substituição em Vetor I*/
+
+ // var prompt = function(t){return lines.shift()}
+
+/*var vetor = []
+
+for(v=0;v<10;v++){
+    var valores = parseInt(prompt(""))
+    vetor[v] = valores
+    if(vetor[v]<=0){
+        vetor[v] = 1
+    }
+    console.log("X["+v+"] = "+vetor[v])
+}*/
+
+/* 1173 - Preenchimento de Vetor I*/
+
+ // var prompt = function(t){return lines.shift()}
+
+
+/*var vetor = []
+var valor = parseInt(prompt(""))
+vetor[0] = valor
+
+for(v=1;v<10;v++){
+    vetor[v] = vetor[v-1]*2
+}
+
+for(v=0;v<10;v++){
+    console.log("N["+v+"] = "+vetor[v])
+} */
+
+/* 1174 - Seleçao em Vetor I*/
+
+ // var prompt = function(t){return lines.shift()}
+
+/*var vetor = []
+
+for(v=0;v<100;v++){
+    vetor[v] = parseFloat(prompt(""))
+    if(vetor[v]<=10){
+    console.log("A["+v+"] = "+vetor[v].toFixed(1))
+    }
+}*/
+
+/* 1175 - Troca em Vetor I*/
+
+ // var prompt = function(t){return lines.shift()}
+
+/* var vetor = []
+var vetor_inv = []
+
+for(v=0;v<20;v++){
+    vetor[v] = parseInt(prompt(""))
+}
+
+for(v=0;v<20;v++){
+    vetor_inv[v] = vetor[20-v-1]
+    console.log("N["+v+"] = "+vetor_inv[v])
+} */
+
+/* 1177 - Preenchimento de Vetor II*/
+
+ // var prompt = function(t){return lines.shift()}
+
+/*var valor = parseInt(prompt(""))
+var vetor = []
+var contador = 0
+
+for(v=0;v<1000;v++){
+    if(contador == valor){
+        contador = 0
+    }
+
+    vetor[v] = contador
+    contador++
+    console.log("N["+v+"] = "+vetor[v])
+}*/
+
+/* 1176 - Fibonacci em Vetor*/
+
+ // var prompt = function(t){return lines.shift()}
+
+/*var casos = parseInt(prompt(""))
+
+var anterior = -1
+var atual = 1
+var proximo;
+
+var numero = []
+
+for(v=0;v<=60;v++){
+    proximo = atual +anterior
+    anterior = atual
+    atual = proximo
+    numero[v] = proximo
+}
+
+for(v=0;v<casos;v++){
+    var posi = parseInt(prompt(""))
+    console.log("Fib("+posi+") = "+numero[posi])
+}*/
+
+/* 1179 - Preenchimento de Vetor IV*/
+
+ // var prompt = function(t){return lines.shift()}
+
+/* 1180 - Menor e Posição*/
+
+ // var prompt = function(t){return lines.shift()}
+
+/*var casos = parseInt(prompt(""))
+
+var posi;
+var menor;
+
+var vetor = prompt("").split("").map(Number)
+
+vetor[0] = menor
+posi = 0
+
+for(v=0;v<=casos;v++){
+    if(vetor[v] < menor){
+        menor = vetor[v]
+        posi = v
+    }
+}
+
+console.log("Menor valor: "+menor)
+console.log("Posicao: "+posi)*/
+
+
+/* 1180 - Menor e Posição*/
+
+ // var prompt = function(t){return lines.shift()}
+
+/*var casos = parseInt(prompt(""))
+
+var menor;
+var posi;
+
+var vetor = prompt("").split(" ").map(Number)
+
+menor = vetor[0]
+posi = 0
+
+for(v=0;v<casos;v++){
+    if(vetor[v]<=menor){
+        menor = vetor[v]
+        posi = v
+    }
+}
+
+console.log("Menor valor: "+menor)
+console.log("Posicao: "+posi)*/
+
+/* 1179 - Preenchimento de Vetor IV*/
+
+ // var prompt = function(t){return lines.shift()}
+
+/*var vetorp = []
+var vetori = []
+var p = 0
+var i = 0
+
+for(v=0;v<15;v++){
+    var numero = parseInt(prompt(""))
+    if(numero%2==0){
+        vetorp[p] = numero
+        p++
+    } else if(numero%2!=0){
+        vetori[i] = numero
+        i++
+    }
+    if(p == 5){
+        p = 0
+        for(m=0;m<5;m++){
+            console.log("par["+v+"] = "+vetorp[m])
+        }
+    }
+    if(i == 5){
+        i = 0
+        for(m=0;m<5;m++){
+            console.log("impar["+m+"] = "+vetori[m])
+        }
+    }
+}
+
+for(m=0;m<=p;m++){
+    console.log("par["+m+"] = "+vetorp[m])
+}
+for(m=0;m<=i;m++){
+    console.log("impar["+m+"] = "+vetori[m])
+}*/
+
+/* 2310 - Voleibol*/
+
+ // var prompt = function(t){return lines.shift()}
+
+/*var casos = parseInt(prompt(""))
+
+var [ST1,BT1,AT1] = [0,0,0]
+var [ST2,BT2,AT2] = [0,0,0]
+
+for(v=0;v<casos;v++){
+    var nomes = prompt("nomes")
+    var [S,B,A] = prompt("tentativa").split(" ").map(Number)
+    var [SS,SB,SA] = prompt("sucesso").split(" ").map(Number)
+
+    var [ST1,BT1,AT1] = [S+ST1,B+BT1,A+AT1]
+    var [ST2,BT2,AT2] = [SS+ST2,SB+BT2,SA+AT2]
+
+    var PS = (100*ST2/ST1).toFixed(2)
+    var PB = (100*BT2/BT1).toFixed(2)
+    var PA = (100*AT2/AT1).toFixed(2)
+}
+
+console.log("Pontos de Saque: "+PS+" %.")
+console.log("Pontos de Bloqueio: "+PB+" %.")
+console.log("Pontos de Ataque: "+PA+" %.")*/
+
+/* 2381- Lista de Chamada*/
+
+ // var prompt = function(t){return lines.shift()}
+
+/*var [n,k] = prompt("").split(" ").map(Number)
+var vetorNOMES = []
+
+for(v=0;v<n;v++){
+    var nome = prompt("")
+    vetorNOMES[v] = nome
+}
+
+for(v=0;v<vetorNOMES.length-1;v++){
+    for(m=0;m<vetorNOMES.length-1-v;m++){
+        if(vetorNOMES[m]>vetorNOMES[m+1]){
+            var aux = vetorNOMES[m]
+            vetorNOMES[m] = vetorNOMES[m+1]
+            vetorNOMES[m+1] = aux
+        }
+    }
+}
+
+console.log(vetorNOMES[k-1])*/
+
+
+
+
+
+
+</script>

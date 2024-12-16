@@ -1,0 +1,27 @@
+<script>
+
+var EPSILON = 0.001;
+
+var x = parseInt(prompt(""))
+
+function func(x){
+           return x * x * x - x * x + 2;
+        }
+function derivFunc(x){
+           return 3 * x * x - 2 * x;
+        }
+function newtonRaphson(x){
+    var h = func(x) / derivFunc(x);
+    while (Math.abs(h) >= EPSILON){
+            h = func(x) / derivFunc(x);
+            x = x - h;
+        }
+
+        console.log("valor"
+                + " da raiz : "
+                + Math.round(x * 100.0) / 100.0);
+    }
+    var x0 = -20;
+    newtonRaphson(x0);
+
+</script>

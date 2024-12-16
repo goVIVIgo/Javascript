@@ -1,0 +1,833 @@
+<meta charset="UFT-8">
+
+<script>
+
+// var prompt = function(t){return lines.shift()}
+
+/* Questão 1015 - Distancia entre dois pontos */
+
+/* var [x1,y1] = lines[0].split(" ");
+var [x2,y2] = lines[1].split(" ");
+
+var distancia = Math.sqrt(Math.pow((x2 - x1),2) + Math.pow((y2 - y1),2));
+
+console.log(distancia.toFixed(4));
+
+/* questao 1004 - Produto Simples */
+
+// var prompt = function(t){return lines.shift()}
+
+/* var v1 = parseInt(prompt("chamar variavel"))
+var v2 = parseInt(prompt("chamar variavel dois"))
+
+var PROD = v1 * v2
+
+console.log("PROD = "+ PROD)
+
+/* questao 1005 - Média 1 */
+
+// var prompt = function(t){return lines.shift()}
+
+/* var A = parseFloat(prompt());
+var B = parseFloat(prompt());
+
+var MEDIA = ((A*3.5) + (B*7.5))/11;
+
+console.log("MEDIA = " + MEDIA.toFixed(5));
+
+/* questao 1006 - Média 2 */
+
+// var prompt = function(t){return lines.shift()}
+
+/* var A = parseFloat(prompt());
+var B = parseFloat(prompt());
+var C = parseFloat(prompt());
+
+var MEDIA= ((A*2) + (B*3) + (C*5))/10;
+
+console.log("MEDIA = " + MEDIA.toFixed(1));
+
+/* questao 1007 - Diferença */
+
+// var prompt = function(t){return lines.shift()}
+
+/* var A = parseInt(prompt());
+var B = parseInt(prompt());
+var C = parseInt(prompt());
+var D = parseInt(prompt());
+
+var DIFERENÇA =  (A * B - C * D)
+
+console.log("DIFERENÇA = " + DIFERENÇA)
+
+/* questao 1008 - Salário */
+
+// var prompt = function(t){return lines.shift()}
+
+/* var numero = parseInt(prompt());
+var horas = parseInt(prompt());
+var valor = parseFloat(prompt());
+
+var salario = horas * valor;
+
+console.log("NUMBER = " + numero + "\n" + "SALARY = U$ " + salario.toFixed(2));
+
+/* questao 1011 - Esfera */
+
+// var prompt = function(t){return lines.shift()}
+
+/* var raio = parseFloat(prompt());
+var pi = 3.14159;
+
+var volume = (4/3) * pi * raio**3;
+
+console.log("VOLUME = " + volume.toFixed(3));
+
+/* questao 1014 - Consumo */
+
+// var prompt = function(t){return lines.shift()}
+
+/* var X = parseInt(prompt());
+var y = parseFloat(prompt());
+
+var consumo = X/Y;
+
+console.log(consumo.toFixed(3) + "km/l");
+
+/* questao 1016 - Distância */
+
+// var prompt = function(t){return lines.shift()}
+
+/* var km = parseInt(prompt())
+var tempo = km * 2
+
+console.log(tempo + " minutos")
+
+/* questao 1017 - Gasto de Combustível */
+
+// var prompt = function(t){return lines.shift()}
+
+/* const gasto = 12;
+
+var tempo = parseInt(prompt());
+var velocidade = parseInt(prompt());
+
+var total = velocidade * tempo;
+
+var consumo = total/gasto;
+
+console.log(consumo.toFixed(3)); */
+
+/* questao 1037 - Intervalo */
+
+// var prompt = function(t){return lines.shift()}
+
+/* var A = parseFloat(prompt());
+var p = '(';
+
+if (A>=0 && A<=25){
+    console.log("Intervalo [0,25]");
+}
+
+if (A>25 && A<=50){
+    console.log("Intervalo "+p+"25,50]");
+}
+
+if (A>75 && A<=100){
+    console.log("Intervalo "+p+"75,100]");
+}
+
+if (A<0 && A>100){
+    console.log("Fora de intervalo");
+} */
+
+/* questao 1038 - Lanche */
+
+// var prompt = function(t){return lines.shift()}
+
+/* var [A,B] =prompt("").split(" ").map(Number)
+
+var valor = 0
+
+if (A==1){
+    valor = 4;
+} else if (A==2){
+    valor = 4.5;
+} else if (A==3){
+    valor = 5;
+} else if (A==4){
+    valor = 2;
+} else if (A==5){
+    valor = 1.5;
+}
+
+var total = valor * B
+
+console.log("Total: R$ " + total.toFixed(2)); */
+
+/* questao 1041 - Coordenadas de um Ponto */
+
+// var prompt = function(t){return lines.shift()}
+
+/* var [X,Y] = prompt("").split(" ");
+
+X = parseFloat(X);
+Y = parseFloat(Y);
+
+if (X===0 && Y===0){
+    console.log("Origem")
+}
+else if (X===0 && Y!==0){
+    console.log("Eixo Y")
+}
+else if (X!==0 && Y===0){
+    console.log("Eixo X")
+}
+else if (X>0 && Y>0){
+    console.log("Q1")
+}
+else if (X<0 && Y>0){
+    console.log("Q2")
+}
+else if (X<0 && Y<0){
+    console.log("Q3")
+}
+else if (X>0 && Y>0){
+    console.log("Q4")
+} */
+
+/* questao 1042 - Sort Simples */
+
+// var prompt = function(t){return lines.shift()}
+
+/* var [A,B,C] = prompt("").split(" ");
+
+A = parseInt(A);
+B = parseInt(B);
+C = parseInt(C);
+
+var max1 = Math.max(A,B,C);
+
+if (max1 == A){
+    var max2 = Math.max(B,C);
+    var max3 = Math.min(B,C);
+}
+if (max1 == B){
+    var max2 = Math.max(A,C)
+    var max3 = Math.min(A,C)
+}
+if (max1 == C){
+    var max2 = Math.max(A,B)
+    var max3 = Math.min(A,B)
+}
+
+console.log(max3)
+console.log(max2)
+console.log(max1)
+console.log("")
+console.log(A)
+console.log(B)
+console.log(C)
+
+/* questao 1043 - Triângulo */
+
+// var prompt = function(t){return lines.shift()}
+
+/* var [A,B,C] = prompt("").split(" ").map(Number)
+
+var perimetroTr = (A+B+C).toFixed(1)
+var areaTR = (((A+B)*C)/2).toFixed(1)
+
+if (A+B>C && B+C>A && C+A>B){
+    console.log("Perimetro = "+perimetroTr)
+} else {
+    console.log("Area = "+areaTR)
+} */
+
+/* questao 1010 - Cálculo Simples*/
+
+// var prompt = function(t){return lines.shift()} 
+
+
+/* var [CP1,NP1,VP1] = prompt("").split(" ")
+var [CP2,NP2,VP2] = prompt("").split(" ")
+
+var VPT = (NP1 * VP1) + (NP2 * VP2)
+
+console.log("VALOR A PAGAR: R$ " +VPT.toFixed(2)) */
+
+/* questao 1018 - Cédulas */
+
+// var prompt = function(t){return lines.shift()}
+
+/* var valor = parseInt(prompt(""))
+
+var notas = parseInt(valor/100)
+console.log(notas + " nota(s) de R$ " + 100.00)
+valor = valor % 100
+
+var notas = parseInt(valor/50)
+console.log(notas + " nota(s) de R$ " + 50.00)
+valor = valor % 50
+
+var notas = parseInt(valor/20)
+console.log(notas + " nota(s) de R$ " + 20.00)
+valor = valor % 20
+
+var notas = parseInt(valor/10)
+console.log(notas + " nota(s) de R$ " + 10.00)
+valor = valor % 10
+
+var notas = parseInt(valor/5)
+console.log(notas + " nota(s) de R$ " + 5.00)
+valor = valor % 5
+
+var notas = parseInt(valor/2)
+console.log(notas + " nota(s) de R$ " + 2.00)
+valor = valor % 2
+
+var notas = parseInt(valor/1)
+console.log(notas + " nota(s) de R$ " + 1.00)
+valor = valor % 1 */
+
+/* questao 1019 - Conversão de Tempos */
+
+// var prompt = function(t){return lines.shift()}
+
+/* var N = parseInt(prompt(""))
+
+var H = parseInt(N/3600)
+N = N % 3600
+var M = parseInt(N/60)
+N = N % 60
+var S = N
+
+console.log(H+":"+M+":"+S) */
+
+/* questao 1020 - Idade em Dias */
+
+// var prompt = function(t){return lines.shift()}
+
+/* var dias = parseInt(prompt(""))
+
+var QA = parseInt(dias/365)
+console.log(QA + " ano(s)")
+dias = dias % 365
+
+var QM = parseInt(dias/30)
+console.log(QM + " mes(es)")
+dias = dias % 30
+
+var QD = dias
+console.log(QD + " dia(s)") */
+
+/* questao 1075 - Resto 2 */
+
+// var prompt = function(t){return lines.shift()}
+
+/* var N = parseInt(prompt(""))
+for(v=2; v<10000; v++){
+    if(v%N==2){
+        console.log(v)
+    }
+} */
+
+/* questao 1078 - Tabuada */
+
+// var prompt = function(t){return lines.shift()}
+
+/* var N = parseInt(prompt(""))
+for(v=1; v<=10; v++){
+    console.log(v+" x "+N+" = "+(v*N))
+} */
+
+/* questao 1079 - Médias Ponderadas */
+
+// var prompt = function(t){return lines.shift()}
+
+/* var N = parseInt(prompt(""))
+for(v=0; v<N; v++){
+    var [ A,B,C] = prompt("").split(" ").map(Number)
+    console.log(((A*2+B*3+C*5)/10).toFixed(1))
+} */
+
+/* questao 1113 - Crescente e Decrescente */
+
+// var prompt = function(t){return lines.shift()}
+
+/* while(true){
+    var [x,y] = prompt("").split(" ").map(Number)
+    if(x==y){
+        break;
+    } else if(x>y){
+        console.log("Crescente")
+    } else if(x<y){
+        console.log("Decrescente")
+    }
+} */
+
+/* questao 1114 - Senha Fixa */
+
+// var prompt = function(t){return lines.shift()}
+
+/* while(true){
+    var senha = parseInt(prompt(""))
+    if(senha !== 2002){
+        console.log("Senha Invalida")
+    } else{
+        console.log("Acesso Permitido")
+        break;
+    }
+} */
+
+/* questao 1115 - Quadrante */
+
+// var prompt = function(t){return lines.shift()}
+
+/* while(true){
+    var [x,y] = prompt("").split(" ").map(Number)
+    if(x>0 && y>0){
+        console.log("primeiro")
+    } else if (x<0 && y>0){
+        console.log("segundo")
+    } else if(x<0 && y<0){
+        console.log("terceiro")
+    } else if(x>0 && y<0){
+        console.log("quarto")
+    } else if(x===0 && y===0){
+        break;
+    }
+} */
+
+/* questao 1116 - Dividindo X por Y */
+
+// var prompt = function(t){return lines.shift()}
+
+/* var n = parseInt(prompt(""))
+for(v=0; v<n; v++){
+    var [x,y] = prompt("").split(" ").map(Number)
+    var div = x/y
+    if(y===0){
+        console.log("divisao impossivel")
+    } else{
+        console.log(div.toFixed(1))
+    }
+} */
+
+/* questao 1133 - Resto da Divisão */
+
+// var prompt = function(t){return lines.shift()}
+
+/* var x = parseInt(prompt(""))
+var y = parseInt(prompt(""))
+
+var max = Math.max(x,y)
+var min = Math.min(x,y)
+
+for(v=(min+1); v<max, v++){
+    if(v%5==2 || v%5==3){
+        console.log(v)
+    }
+} */
+
+/* questao 1064 - Positivos e Média */
+
+// var prompt = function(t){return lines.shift()}
+
+/* var positivo = 0
+var soma = 0
+
+for(v=0; v<6; v++){
+    var valor = parseFloat(prompt(""))
+    if(valor>0){
+        positivo++
+        soma += valor
+    }
+}
+var media = soma/valor
+
+console.log(positivo + " valores positivos")
+console.log(media.toFixed(1))
+
+
+var b = 0
+var a;
+var n = 6
+var media = 0
+
+for(i=0; i<n; i++){
+    var a = parseFloat(prompt(""))
+    if(a>0){
+        b++
+        media += a
+    }
+}
+
+console.log(b +" valores positivos")
+var calculo = media/b
+console.log(calculo.toFixed(1)) */
+
+/* questao 1065 - Pares entre Cinco Números */
+
+// var prompt = function(t){return lines.shift()}
+
+/* var pares = 0
+
+for(v=0; v<5; v++){
+    var N = parseInt(prompt(""))
+    if(N%2===0){
+        pares++
+    }
+}
+
+console.log(pares + "valores pares") */
+
+/* questao 1066 - Pares, Ímpares, Positivos e Negativos */
+
+// var prompt = function(t){return lines.shift()}
+
+/* var pares = 0
+var impares = 0
+var positivos = 0
+var negativos = 0
+
+for(v=0; v<5; v++){
+    var N = parseInt(prompt(""))
+    if(N%2===0){
+        pares++
+    }
+    if (N%2!==0){
+        impares++
+    }
+    if (N>0){
+        positivos++
+    }
+    if (N<0){
+        negativos++
+    }
+
+}
+
+console.log(pares +" valor(es) par(es)")
+console.log(impares +" valor(es) impar(es)")
+console.log(positivos +" valor(es) positivo(s)")
+console.log(negativos +" valor(es) negativo(s)") */
+
+/* questao 1071 - Soma de Impares Consecutivos I */
+
+// var prompt = function(t){return lines.shift()}
+
+/* nao consegui */
+
+/* questao 1072 - Intervalo 2 */
+
+// var prompt = function(t){return lines.shift()}
+
+/* var N = parseInt(prompt(""))
+
+var IN = 0
+var OUT = 0
+
+for(v = 0; v<N; v++){
+    var x = parseInt(prompt(""))
+    if (x >= 10 && x <= 20){
+        IN ++
+    } else {
+        OUT++
+    }
+}
+
+console.log(IN +" in")
+console.log(OUT +" out") */
+
+/* questao 1080 - Maior e Posição */
+
+// var prompt = function(t){return lines.shift()}
+
+/* questao 1146 -Sequências Crescentes */
+
+// var prompt = function(t){return lines.shift()}
+
+
+/* var x=1
+
+var aux
+
+var n=parseInt(prompt(""));
+
+while(x <= n){
+
+    if(n === 0){
+        break;
+    }
+    else{
+        if (x === n){
+            aux += (x + "\n");
+            x=0;
+            n=parseInt(prompt(""));
+        }else
+            aux += (x + " ");
+    }
+    x++;
+}
+console.log(aux); */
+
+
+/* questao 2373 - Número Perfeito */
+
+// var prompt = function(t){return lines.shift()}
+
+/* var bandeja = parseInt(prompt(""))
+var l;
+var c;
+var quebrado = 0 
+
+for(v=0; v<bandeja; v++){
+    [l,c] = prompt("").split(" ").map(Number)
+    if(l>c){
+        quebrado += c
+    }
+}
+console.log(quebrado) */
+
+/* questao 1164 - Número Perfeito */
+
+// var prompt = function(t){return lines.shift()}
+
+/* var n = parseInt(prompt(""))
+
+for(v=0; v<n; v++){
+    var x = parseInt(prompt(""))
+    var cont = 0
+
+    for(m=1; m<x; m++){
+        if(x%m===0){
+            cont+=m
+        }
+    }
+    if(x==cont){
+        console.log(x + " eh perfeito")
+    } else{
+        console.log(x + " nao eh perfeito")
+    }
+} */
+
+/* questao 1134 - Tipo de Combustível */
+
+// var prompt = function(t){return lines.shift()}
+
+/* var silly = 0
+var a = 0
+var g = 0 
+var d = 0 
+
+while(silly<4){
+    var esc = parseInt(prompt(""))
+    while(esc<1 || esc>4){
+        var esc = parseInt(prompt(""))
+    }
+    if(esc == 1){
+    a++
+    } else if (esc == 2){
+    g++
+    } else if (esc == 3){
+    d++
+    } else if(esc == 4){
+    silly = esc
+    }
+}
+
+console.log("MUITO OBRIGADO")
+console.log("Alcool: "+a)
+console.log("Gasolina: "+g)
+console.log("Diesel: "+d) */
+
+/* questao 1080 - Maior e Posição */
+
+// var prompt = function(t){return lines.shift()}
+
+/* var maior = 0 
+var posi = 0 
+
+for(v=1; v<=100; v++){
+    var n = parseInt(prompt(""))
+    if(n>maior){
+        maior = n
+        posi = v
+    }
+}
+
+console.log(maior)
+console.log(posi) */
+
+/* questao 1094 - Experiências */
+
+// var prompt = function(t){return lines.shift()}
+
+/* var n = parseInt(prompt(""))
+var total
+var s = 0
+var r = 0
+var c = 0
+
+for(v=0; v<n; v++){
+    var [x,y] = prompt("").split(" ")
+    x = parseInt(x)
+
+    if(y == "c"){
+        c+=x
+    } else if (y == "r"){
+        r+=x
+    } else if (y == "s"){
+        s+=x
+    }
+    total = s+r+c
+}
+
+var ps = ((s/total)*100).toFixed(2)
+var pr = ((r/total)*100).toFixed(2)
+var pc = ((c/total)*100).toFixed(2)
+
+console.log("Total: " +total+ " cobaias")
+console.log("Total de coelhos: "+c)
+console.log("Total de ratos: "+r)
+console.log("Total de sapos: "+s)
+console.log("Percentual de coelhos: "+pc+" %")
+console.log("Percentual de ratos: "+pr+" %")
+console.log("Percentual de sapos: "+ps+" %") */
+
+/* questao 1151 - Fibonacci Fácil */
+
+// var prompt = function(t){return lines.shift()}
+
+/* var n = parseInt(prompt(""))
+var texto = " "
+var atual = 1 
+var anterior = 0
+var proximo = 0 
+
+if(n===0 || n==1){
+    console.log(anterior)
+}
+
+texto+=anterior + " " + atual
+
+for(i=1; i<(n-1); i++){
+    proximo = anterior+atual
+    anterior = atual
+    atual = proximo
+    texto += " "+atual
+}
+console.log(texto) */
+
+/* questao 1153 - Fatorial Simples */
+
+// var prompt = function(t){return lines.shift()}
+
+/* var n = parseInt(prompt(""))
+var fatorial = 1 
+
+for(v=0;v<n;v++){
+    fatorial = fatorial*(n-v)
+}
+
+console.log(fatorial) */ 
+
+/* questao 1154 - Idade */
+
+// var prompt = function(t){return lines.shift()}
+
+/* var n = parseInt(prompt(""))
+
+var soma=n
+var cont = 1
+
+while(n>=0){
+    var n = parseInt(prompt(""))
+    if(n>=0){
+        soma+=x
+        cont++
+    } else{
+        break
+    }
+
+}
+
+var media = soma/cont
+
+console.log(media.toFixed(2)) */
+
+/* questao 1155 - Sequência S */
+
+// var prompt = function(t){return lines.shift()}
+
+/* s = 0
+for(v=1;v<=100;v++){
+    s+=(1/v)
+}
+
+cnsole.log(s.toFixed(2)) */
+
+/* questao 1156 - Sequência S 2*/
+
+// var prompt = function(t){return lines.shift()}
+
+/*var denominador = 2
+var s = 1
+
+for(v=3; v<=39; v=v+2){
+    s=s+(v/denominador)
+    denominador=denominador*2
+}
+
+console.log(s.toFixed(2))*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
